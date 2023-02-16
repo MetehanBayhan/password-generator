@@ -1,0 +1,141 @@
+
+[data-theme="light"] {
+    --description-color: #1F2937;
+    --background-color: #ECFDF5;
+}
+
+[data-theme="dark"] {
+    --description-color: #D5D4D8;
+    --background-color: #1F2937;
+}
+body {
+    background-color:#1C1C1C;
+}
+.container{
+    margin: auto;
+    margin-top: 100px;
+    width: 550px;
+    height: 550px;
+    background-color: var(--background-color);
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.description{
+    margin-bottom: 50px;
+}
+.description p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1F2937;
+    margin: 0px;
+    padding: 0px;
+}
+.creator {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 35px;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: -0.025em;
+    line-height: 40px;
+    font-size: 40px;
+    color: var(--description-color);
+}
+#gen-btn{
+    margin-bottom: 35px;
+    padding: 9px 16px;
+    background: #10B981;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    font-size: 16px;
+
+}
+#theme-btn{
+    margin: 0px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 25px;
+    background-color: #10B981;
+    border: 0px;
+    position: relative;
+    float: right;
+    margin-bottom: 40px;
+}
+.checkbox{
+    background-color: #10B981;
+    padding: 9px 16px;
+    border-radius: 6px;
+    color: white;
+}
+
+.length-inp {
+    display: flex;
+    align-items: center;
+}
+#length-input {
+    background-color: #10B981;
+    color: white;
+    border: 0px;
+    height: 38px;
+    border-radius: 6px;
+    text-align: center;
+}
+#length-input::placeholder{
+    color: white;
+    font-size: 16px;
+}
+hr{
+    margin-top: 0px;
+    margin-bottom: 35px;
+    width: 446px;
+    border: 1px solid #2F3E53;
+}
+.pwd-box{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.pwd-viewer {
+    width: 211px;
+    height: 39px;
+    background: #273549;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.pwd-viewer button{
+    margin: 0px;
+}
+
+
+.copy-btn{
+    background-color: #273549;
+    border: 0;
+    color: #10B981;
+    font-family: 'Inter', sans-serif;
+}
+.pwd-viewer:hover{
+    box-shadow: 0px 0px 8px 2px #10B981;
+    transition: 0.8s;
+}
+.green{
+    color: #10B981;
+}
